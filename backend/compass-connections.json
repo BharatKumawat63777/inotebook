@@ -1,0 +1,160 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "2102da87-a4bf-4336-848b-b1a40f089f5e",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1723547402791"
+        }
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      },
+      "connectionSecrets": "AAGxwqpa/cnvPPZ2fjyJo2GTH9UDQYZiIwlYYAG1L7ZGsIMN8olrIkc2j9BwMeMC/kTQ0zEiJHpxIrop14/vvfWB0INwOjfTKHsLBptcpv9RZNy4aykez4bhcMXM9orsLb24hGDIFUrUWuJqfZfRYmkVTCNAl4CXntoNHww9Nj9pUEnwZQqCYm7Dctc="
+    },
+    {
+      "id": "298f7140-da44-43d0-aa37-cdf4fab2f3f1",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1724243613461"
+        }
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      },
+      "connectionSecrets": "AAHwMR/WDGlLRPozp6chauQWvgMUtXyWQfY1ENl+YKmzijf7EjaspS6jgyb9UPkkUgnPC9xVxJodUN8SYffpBSboyMZ5k7TrkxdvAZJQRs2haSOiyO6PtpqxR6SutRXzz044FsvAvkI954YdW9GU0IHiiOhH3WXqIRkTItlwKmF0HfFc+QUSgK76gog="
+    },
+    {
+      "id": "2b96f44b-b74e-4917-b8c8-bda06c56b1a2",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1718214874793"
+        }
+      },
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      },
+      "savedConnectionType": "recent",
+      "connectionSecrets": "AAGxkg0puzgiThTlIwZgbqHgaAgZE8z0bI06s2QRBXaTZ3tACHXgb9GXL4hsrFCg6KYR4Gmf4OjGwj7bgEVaVtWDBJFFOonUm4OULbVXOhrkUnQ1OJoA8+Ds0id4xfuxISO5D/46PwgQFGS1hBhKe+5lUxW6FPThvmWwLjkCpLyh+kDTSRJohK/lZnU="
+    },
+    {
+      "id": "3b9e601d-dcfc-43fd-9ad9-1e026908fd54",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1718214953714"
+        }
+      },
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      },
+      "savedConnectionType": "recent",
+      "connectionSecrets": "AAG9RNEFwa5elV3XtqedD3g8kRiKOl+HbyxmF0WJYaO8agHZBy2zFyQSNncPXAEDZdk7+c/vgcoqn4OK0D0ovnSD1vBiK9V9YHAFrLCIOoUKaNuhxC40A8WV91szJDKtSghJ0T9/eMJVUyWg8iE27MCQ1tYrSfrJ2+8tJAUDsy/ClJK//Xd5Z2miD58="
+    },
+    {
+      "id": "47d9dc3c-36f4-4b27-bfef-e9507dfd97ac",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1724082348387"
+        }
+      },
+      "favorite": {
+        "name": "iNotebook",
+        "color": "color2"
+      },
+      "savedConnectionType": "favorite",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      },
+      "connectionSecrets": "AAHAk5T5M8KR7T5PgSxLHJEYK/rkIqL+a7KPvvEV6X/KaQLZAUCWaKWh41Ccyq0Ja/g2YaLfH2Qxsz66IAmMjqlFw4nZcg8QatiFwLNpueayOGvBoDCyZAaEqnKo39PcXGpW6o9LmLJh+DhBlc3idWpssYd2IPsPdnBkZSvk6rj1altUwArwDhumLvs="
+    },
+    {
+      "id": "60cb7edf-c012-4bc8-9e9f-89f5802a4907",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/"
+      },
+      "savedConnectionType": "recent",
+      "connectionSecrets": "AAEqq+Wf0Uec7Xn7YETFXTVUcY7gOoyGkix2Ob/dnKGGsOd8eOAy9afIBMklP12VmhwEU3tkIMglvK8p86Ug0Q=="
+    },
+    {
+      "id": "6cbca256-0350-4d08-a0bc-d791365940bd",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1723797729357"
+        }
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      },
+      "connectionSecrets": "AAEkqEmmhSQ2S8YmnLax5S99WXENAsPQNJNxPfSX3g+E8WbpiKPaaPKbhGqynfdqTPXiMzY0dvs/lCa7RCUDJ9noeAEdYf1R2N8nknwkDFOgsxHw6BbfkW/aT8eJyKAag7PoGRTmJKdzMyitWSmDjpuJVdkRv53O3C6LDhqKjo+ozIljSumAiYQGcCc="
+    },
+    {
+      "id": "7be99465-5698-408a-96ec-f913b7e345ab",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1724262914328"
+        }
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      },
+      "connectionSecrets": "AAH7UIDskp3QpLjNU06rl4SXP3fJaAQBk35Bw8S8bNa6YDlbwFsN3EcocKagHz5bsxnE6ML/NfXjPtLeMMADihVU+XCZ6UikxXjARC4fHS9OWKOre/wHMhWASqYk2HoPKnAPLUodTmyEBDkb7+dZEscL+HglLiX64H/3QjHd71qFbkxOfr//rk2RoOs="
+    },
+    {
+      "id": "8fea60eb-2a66-41c5-ac0e-398a9dfcb1ea",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1722775211917"
+        }
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      },
+      "connectionSecrets": "AAGUPzCAWldPxLa2KyMPMnVMgvp7FZS1bbhAMnWSt1e2HX5mxJqxv/hBX5cherAGa+3SOWCpS32TNCHuLLy2J1mHei2oogkK1bBms7eKKUxKFUy8MO+BiPBwzSXz+5W+W5nNHUdXsJABt+C+U+eQFdwAqS5U2sDzOSOpBtfEj13ZXJL+q+8l7tUGHYE="
+    },
+    {
+      "id": "a648180f-39ec-4e37-ba2f-ca56f135ffa7",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1699163184696"
+        }
+      },
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      },
+      "savedConnectionType": "recent",
+      "connectionSecrets": "AAFVEEtQgKFfqSZ+EIoFbp4qHmX0G6BwMj2CopyX3TlkhvAU/uM9PWxFDjEK484/Svfpb2Wo1hwfu3INSIP9DnEGLiCWjdUwaO37eLO52hhrk9CeCXwmFz0LpsrWuNeiLxYQ+SbCkYXmgu/cLnQb++zMeCczs6UzaeFMlVvlLbKr+Z95nUMC9uej3qs="
+    },
+    {
+      "id": "ec8966a9-106d-4cda-9252-fd474a058191",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1722770830781"
+        }
+      },
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      },
+      "savedConnectionType": "recent",
+      "connectionSecrets": "AAFZP7rOcS/XdGpaPgMbxZdnMIxw+T2XWpXyIxadJ6FnyZlBlssp9P9vdSboyfwoIl09H2QJoTNIDZOYYh9HmNvREZAgDyjZIXOg1+htDCS+MhHsk81qhTJC7wPXZPcphxbaAQvnrzaJjJK5SVlpo+7ETJ6t0nDncGmImGtWCFKy7SqnA5wM6SO8OVQ="
+    }
+  ]
+}
