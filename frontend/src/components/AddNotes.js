@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import noteContext from "../context/notes/noteContext";
-const AddNotes = () => {
+const AddNotes = (props) => {
   const context = useContext(noteContext);
 
   // eslint-disable-next-line
@@ -8,11 +8,13 @@ const AddNotes = () => {
   const [note, setNote] = useState({
     title: "",
     description: "",
-    tag: "default",
+    tag: "",
   });
   const handleClick = (e) => {
     e.preventDefault();
     addNotes(note.title, note.description, note.tag);
+    setNote({ title: "", description: "", tag: "" });
+    props.showAlert("Your Notes Add ", "success");
   };
   const onChange = (e) => {
     setNote({ ...note, [e.target.name]: e.target.value });
@@ -31,7 +33,10 @@ const AddNotes = () => {
             name="title"
             aria-describedby="title"
             placeholder="Enter Title"
+            value={note.title}
             onChange={onChange}
+            minLength={5}
+            required
           />
         </div>
         <div className="form-group">
@@ -41,11 +46,25 @@ const AddNotes = () => {
             className="form-control"
             id="description"
             name="description"
-            placeholder="Description"
+            placeholder="Enter Description"
+            value={note.description}
+            onChange={onChange}
+            minLength={5}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="tag">Tag</label>
+          <input
+            type="text"
+            className="form-control"
+            id="tag"
+            name="tag"
+            placeholder="Enter Tag "
+            value={note.tag}
             onChange={onChange}
           />
         </div>
-
         <button
           type="submit"
           className="btn btn-primary mb-3"

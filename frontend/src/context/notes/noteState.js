@@ -15,13 +15,12 @@ const NoteState = (props) => {
     const response = await fetch(`${host}/api/notes/fetchallnotes`, {
       method: "GET",
       headers: {
-        "Content-Type": "application/json",
-        "auth-token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjZkYzI5MDcxYzVlNjU1MmRhMzFmZmZjIn0sImlhdCI6MTcyNTcxMDUxM30.g-tXKSvnSm7hun1SzY_gP3sLVMUSLSKSszsLuw-hsUc",
+        "auth-token": localStorage.getItem("token"),
       },
     });
     const json = await response.json();
-    console.log("Hey ",json);
+    // console.log("Hey ", json);
+
     setNotes(json);
   };
 
@@ -34,29 +33,30 @@ const NoteState = (props) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "auth-token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjZkYzI5MDcxYzVlNjU1MmRhMzFmZmZjIn0sImlhdCI6MTcyNTcxMDUxM30.g-tXKSvnSm7hun1SzY_gP3sLVMUSLSKSszsLuw-hsUc",
+        "auth-token": localStorage.getItem("token"),
       },
 
       body: JSON.stringify({ title, description, tag }),
     });
-    const json = response.json();
-    console.log(json);
+    const note = await response.json();
 
-    const note = {
-      _id: "66df13800561158cda4e159a",
-      user: "66dc29071c5e6552da31fffc",
-      title: title,
-      description: description,
-      tag: tag,
-      data: "2024-09-09T15:25:52.185Z",
-      __v: 0,
-    };
-    setNotes(notes.concat(note));
+    setNotes([note, ...notes]); //This is a function , it's mean add at front note and [...notes] other is same...
+    //This setNotes(notes.concat(note)) it means, we can add new array at end
+    console.log(note);
   };
 
   // Delete a Note
-  const deleteNotes = (id) => {
+  const deleteNotes = async (id) => {
+    // API call
+    const response = await fetch(`${host}/api/notes/deletenotes/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        "auth-token": localStorage.getItem("token"),
+      },
+    });
+    const json = await response.json();
+    console.log(json);
     console.log("Deleting the note with id", id);
     const newNotes = notes.filter((note) => {
       return note._id !== id;
@@ -69,31 +69,36 @@ const NoteState = (props) => {
     //API call
 
     const response = await fetch(`${host}/api/notes/updatenote/${id}`, {
-      method: "POST",
+      method: "PUT",
       headers: {
         "Content-Type": "application/json",
-        "auth-token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjZkYzI5MDcxYzVlNjU1MmRhMzFmZmZjIn0sImlhdCI6MTcyNTcxMDUxM30.g-tXKSvnSm7hun1SzY_gP3sLVMUSLSKSszsLuw-hsUc",
+        //for login purpuse
+        "auth-token": localStorage.getItem("token"),
       },
 
       body: JSON.stringify({ title, description, tag }),
     });
-    const json = response.json();
+    const json = await response.json();
     console.log(json);
 
+    let newNotes = JSON.parse(JSON.stringify(notes)); //This is use for update in frontend data and copy
     // logic to edit in clint
-    for (let index = 0; index < notes.length; index++) {
-      const element = notes[index];
+    for (let index = 0; index < newNotes.length; index++) {
+      const element = newNotes[index];
       if (element._id === id) {
-        element.title = title;
-        element.description = description;
-        element.tag = tag;
+        newNotes[index].title = title;
+        newNotes[index].description = description;
+        newNotes[index].tag = tag;
+        break;
       }
     }
+    setNotes(newNotes); //set update data in database
   };
 
   return (
-    <NoteContext.Provider value={{ notes, addNotes, deleteNotes, editNotes,getNotes }}>
+    <NoteContext.Provider
+      value={{ notes, addNotes, deleteNotes, editNotes, getNotes }}
+    >
       {props.children}
     </NoteContext.Provider>
   );
