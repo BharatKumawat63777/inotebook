@@ -18,7 +18,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <Link className="navbar-brand" to="#">
-            INotebook
+            AdiYogi
           </Link>
           <button
             className="navbar-toggler"
@@ -41,7 +41,7 @@ const Navbar = () => {
                   aria-current="page"
                   to="/"
                 >
-                  Home
+                  What to do
                 </Link>
               </li>
               <li className="nav-item">
@@ -51,7 +51,17 @@ const Navbar = () => {
                   }`}
                   to="/About"
                 >
-                  About
+                  Yoga
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className={`nav-link ${
+                    location.pathname === "./Sport" ? "active" : ""
+                  }`}
+                  to="/Sport"
+                >
+                  WorkOut
                 </Link>
               </li>
             </ul>
