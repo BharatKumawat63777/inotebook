@@ -1,17 +1,11 @@
-import React from "react";
-import {Header,WhyYoga,Hero,Classes,Stories,Gallery,Footer} from "./gym"
-const About = () => {
-  return <div>
+import React from 'react'
 
+function About() {
+  return (
+    <div>
+      About
+    </div>
+  )
+}
 
-    <Header />
-    <WhyYoga />
-    <Hero />
-    <Classes />
-    <Stories />
-    <Gallery/>
-    <Footer/>
-  </div>;
-};
-
-export default About;
+export default About

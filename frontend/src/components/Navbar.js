@@ -51,17 +51,7 @@ const Navbar = () => {
                   }`}
                   to="/About"
                 >
-                  Yoga
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className={`nav-link ${
-                    location.pathname === "./Sport" ? "active" : ""
-                  }`}
-                  to="/Sport"
-                >
-                  WorkOut
+                  About
                 </Link>
               </li>
             </ul>
