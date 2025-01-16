@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 // import mongoose from "mongoose";
-const mongoURI = "mongodb+srv://ebharat637:987653210@inotebook.drems.mongodb.net/";
+const mongoURI =
+  "mongodb+srv://ebharat637:987653210@inotebook.drems.mongodb.net/";
 
 const connectToMongo = async () => {
   try {
